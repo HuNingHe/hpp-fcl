@@ -196,7 +196,7 @@ endif()
 IF(MSVC)
   target_compile_options(${PROJECT_NAME} PUBLIC "/bigobj")
 ENDIF()
-target_compile_options(${PROJECT_NAME} PUBLIC "-Wno-maybe-uninitialized")
+target_compile_options(${PROJECT_NAME} PUBLIC "-Wno-maybe-uninitialized" "-Wno-pedantic")
 
 # IDE sources and headers sorting
 ADD_SOURCE_GROUP(${LIBRARY_NAME}_SOURCES)
